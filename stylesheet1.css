@@ -1,0 +1,135 @@
+/* Note: I, Alexis Scobey, am in no way a professional. */
+/* This stylesheet doesn't follow any good practices, and I'm surprised it works at all */
+/* I'm also unsure about copyright, so you're using this at your own risk. */
+/* If you do use it, and it turns out to be illegal, we should totally be prison buddies though */
+/* I'm just kidding, of course. Mostly. */
+
+/* Turns the SpaceHey Logo Black */
+.logo {
+filter: brightness(0%);
+}
+/* Sets the background image and scaling, as well as the font */
+/* Note: it's probably a bad idea long-term to pull this from osxdaily's CDN, but I'm too lazy to mirror it elsewhere. */
+body{
+	background-image: url(https://www.color-hex.com/palettes/4666.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif; ;
+}
+/* Recolors the top bar to look like macOS */
+/* Credit where it's due: I stole this from https://codepen.io/JohJakob/pen/YPxgwo */
+nav .top{
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ebebeb, color-stop(1.0, #d5d5d5)));
+	background: -webkit-linear-gradient(top, #ebebeb, #d5d5d5);
+	background: -moz-linear-gradient(top, #ebebeb, #d5d5d5);
+	background: -ms-linear-gradient(top, #ebebeb, #d5d5d5);
+	background: -o-linear-gradient(top, #ebebeb, #d5d5d5);
+	background: linear-gradient(top, #ebebeb, #d5d5d5);
+	color: #4d494d;
+	font-size: 11pt;
+	line-height: 20px;
+	text-align: center;
+	border-top: 1px solid #f3f1f3;
+	border-bottom: 1px solid #b1aeb1;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	cursor: default;
+}
+/* Makes the search bar round */
+input#q {
+	border-radius: 15px;
+}
+/* Recolors the navigation bar */
+nav .links{
+	background: #f2f2f2;
+	color: black !important;
+}
+/* Recolors the links in the navigation bar */
+nav .links a{
+				color: black !important;
+}
+/* Changes the background color of the main window */
+main {
+	border-radius: 0px 0px 15px 15px;
+	background: white;
+}
+/* Gives the top of the window a bit of breathing space */
+.container {
+	margin: 10px auto 10px;
+}
+/* Changes the color of the footer */
+/* No idea why, but it HAS to be in rgba format */
+/* Again, I'm not a CSS pro, don't ask */
+footer {
+	background: rgba(255, 255, 255, 100) !important;
+	border-radius: 15px 15px 15px 15px;
+}
+/* Applies rounded corners to all images */
+/* ALL images. */
+/* All. Of. Them. */
+img {
+	border-radius: 6px;
+}
+/* Makes sure all of our text is the correct color. */
+/* Best to just edit all of them. Trust me. */
+p {
+	color: black;
+}
+h1 {
+	color: black;
+}
+h4 {
+	color: black;
+}
+
+/* Everything below this point is genuinely terrible */
+/* Do not ask me to debug it for you, I don't know how I made it work to begin with */
+
+/* Makes the headings gray */
+.profile .blurbs .heading, .profile .friends .heading, .profile .contact .heading, .profile .table-section .heading, .home-actions .heading {
+	background-color: #f2f2f2;
+}
+/* Gives the left side of the details table a color */
+.details-table td:first-child {
+	background: #f6f6f6;
+}
+/* Gives the right side of the details table a color */ 
+.details-table td {
+	background: #f2f2f2;
+}
+/* Removes the borders from the Comments box */
+/* Note: There may be a better-looking approach, but I'm tired af */
+.friends th, tr, .friends td, th, .icon, #comments, main, .comments-table, .friends, .profile-info, .table, .table-section, .contact, .url-info, .mood, .blurbs, .blog-preview, .details, .profile-pic img {
+	border: 0px dotted gray !important;
+	outline: none !important;
+}
+/* Makes the left column in the comments box gray */
+.comments-table td:first-child, .music-table td:first-child {
+	background: #f6f6f6;
+}
+/* Makes the right column of the comments box white */
+.comments-table td, .music-table td {
+	background: white;
+}
+/* Makes comment replies gray */
+.comment-replies {
+	border: 5px solid white; 
+	background: #f2f2f2;
+}
+/* Makes links look better when moused over */
+a:hover {
+	text-decoration: underline;
+				color: #1E40AF;
+}
+/* Probably the same when clicking, I think */
+a:active {
+	text-decoration: none;
+	color: #1E40AF;
+}
