@@ -7,7 +7,7 @@
 /* Sets the background image and scaling, as well as the font */
 /* Note: it's probably a bad idea long-term to pull this from osxdaily's CDN, but I'm too lazy to mirror it elsewhere. */
 body{
-	background-image: url(https://cdn.discordapp.com/attachments/1030887081704173580/1160264948686012457/backigroo.png?ex=653407f0&is=652192f0&hm=45bafeae3f1afbb5b31e3d901cbc1b036a6e199f898cc19637ad0d8fd1169c21&);
+	background-image: url(https://ibb.co/5GT3SNq);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
